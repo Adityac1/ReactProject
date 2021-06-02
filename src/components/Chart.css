@@ -1,0 +1,45 @@
+.country{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+.countrylist{
+  
+  
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  margin: -25px 0 0 -25px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    width: 30%;
+}
+.country:hover{
+    transform: scale(2);
+}
+.country > img{
+    width: 33%;
+    height: auto;
+}
+.country > h2{
+    margin: 5px 0;
+}
+.describe{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    width: 95%;
+}
